@@ -6,20 +6,25 @@ describe("JS fundamental Drills", function() {
     var doubledArray = func.doubleArray([1, 2, 3]);
     expect(doubledArray).to.deep.equal([2, 4, 6]);
   });
+
   it("#sumArrays is a function that takes in two arrays of numbers and returns the sum of the numbers of both arrays.", function() {
     var sum = func.sumArrays([1, 2, 3], [4, 5, 6]);
     expect(sum).to.deep.equal(21);
   });
+  
   it("#stringCount is a function that takes in a string and returns the amount of letters in the string.", function() {
     var count = func.stringCount("abc");
     expect(count).to.deep.equal(3);
   });
+
   it("#arrayLength is a function that takes in an array and returns the length of the array. ", function() {
     expect(func.arrayLength([1, 2, 3])).to.deep.equal(3);
   });
+
   it("#countAll is a function that takes in an array of numbers and returns the sum of all numbers in the array.", function() {
     expect(func.countAll([1, 2, 3])).to.deep.equal(6);
   });
+  
   it("#countStrings is a function that takes in an array of strings and returns an array containing each of the lenghts of the strings.", function() {
     expect(func.countStrings(["a", "ab", "abc"])).to.deep.equal([1, 2, 3]);
   });
